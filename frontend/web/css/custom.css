@@ -1,0 +1,213 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f2f2f2;
+}
+
+body h1 {
+    text-align: center;
+}
+
+.admin-headings {
+    background: #435d7d;
+    color: #fff;
+    padding: 2rem 3rem;
+    font-size: 2.5rem;
+    margin-top: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.box-styles {
+    max-width: 50rem;
+    background: #ffffff;
+    box-shadow: 1px 1px 2px 1px #e2e2e2;
+}
+
+.form-container {
+    max-width: 35rem;
+    padding: 2rem 3rem;
+    background: #ffffff;
+    box-shadow: 1px 1px 2px 1px #e2e2e2;
+}
+
+.site-form {
+    display: flex;
+    justify-content: center;
+}
+
+.site-form h1 {
+    margin-bottom: 3rem;
+}
+
+.site-form:not(.site-settings) .form-group label {
+    display: none;
+}
+
+.submit-btn {
+    width: 100%;
+}
+
+/* USER UPLOAD FILE */
+#uploadform-file-fileupload tbody.files {
+    display: flex;
+    flex-direction: column;
+}
+
+#uploadform-file-fileupload .template-download,
+#uploadform-file-fileupload .template-upload {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    margin-top: 1rem;
+}
+
+#uploadform-file-fileupload .table > tbody > tr > td {
+    border: none;
+    flex-grow: 1;
+}
+
+#uploadform-file-fileupload .preview {
+    display: inline-block;
+    max-width: 20rem;
+}
+
+#uploadform-file-fileupload img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.fileupload-buttonbar .btn {
+    margin-bottom: 0.3rem;
+}
+
+@media screen and (max-width: 992px) {
+    #uploadform-file-fileupload .template-download,
+    #uploadform-file-fileupload .template-upload {
+        flex-wrap: wrap;
+    }
+
+    #uploadform-file-fileupload .name {
+        word-break: break-all;
+    }
+}
+
+
+/* ADMIN USER MANAGEMENT */
+
+.site-manage-users .table-wrapper {
+    background: #ffffff;
+    box-shadow: 1px 1px 2px 1px #e2e2e2;
+}
+
+.site-manage-users .table-wrapper .label {
+    display: block;
+    padding: 0.6em;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.site-manage-users .table-wrapper .table {
+    table-layout: fixed;
+}
+
+.site-manage-users .table-wrapper .table > thead > tr > th {
+    border-bottom: none;
+}
+
+.site-manage-users .table-wrapper td[data-label] {
+    word-break: break-all;
+}
+
+@media screen and (max-width: 768px) {
+    .site-manage-users .table-wrapper table,
+    .site-manage-users .table-wrapper tbody,
+    .site-manage-users .table-wrapper thead,
+    .site-manage-users .table-wrapper th,
+    .site-manage-users .table-wrapper tr,
+    .site-manage-users .table-wrapper td {
+        display: block;
+    }
+
+    .site-manage-users .table-wrapper thead {
+        position: fixed;
+        top: -999999px;
+    }
+
+    .site-manage-users .table-wrapper [data-label]::before {
+        content: attr(data-label);
+        display: inline-block;
+        font-weight: 700;
+        width: 40%;
+    }
+}
+
+/* ADMIN SETTINGS */
+
+.settings-content {
+    padding: 2rem 3rem;
+}
+
+.site-settings .submit-btn-container{
+    margin-bottom: 0.6rem;
+    margin-top: 2rem;
+}
+
+.back-btn{
+    background-color: #5bc0de;
+    width: 100%;
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+/* USER FILES VIEW */
+
+.view-files-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.view-files-wrapper p {
+    word-break: break-all;
+}
+
+.view-files-wrapper .back-btn{
+    margin-bottom: 2rem;
+    display: block;
+    width: 90%;
+}
+
+.site-view-user-files {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.files-container {
+    margin-bottom: 4rem;
+    padding: 2rem;
+}
+
+/* GENERAL CSS */
+
+.bold_text {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+}
